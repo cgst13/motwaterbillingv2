@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/motwaterbillingv2/static/css/main.60ce1b8d.css",
+    "main.js": "/motwaterbillingv2/static/js/main.98e5b25b.js",
+    "index.html": "/motwaterbillingv2/index.html",
+    "main.60ce1b8d.css.map": "/motwaterbillingv2/static/css/main.60ce1b8d.css.map",
+    "main.98e5b25b.js.map": "/motwaterbillingv2/static/js/main.98e5b25b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60ce1b8d.css",
+    "static/js/main.98e5b25b.js"
+  ]
+}
