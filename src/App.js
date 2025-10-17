@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Login from './components/Login'
 import Dashboard from './components/Dashboard'
 import ProtectedRoute from './components/ProtectedRoute'
@@ -32,7 +32,7 @@ function App() {
   }, [])
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className="App">
         <Routes>
           {/* Redirect root to login or dashboard based on auth status */}
