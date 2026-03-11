@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Water Billing System</title>
+    <script type="text/javascript">
+      var l = window.location;
+      var origin = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '');
+      var path = l.pathname || '/';
+
+      var isFileRequest = /\.[a-zA-Z0-9]+$/.test(path) && !path.endsWith('.html');
+      var isIndexLoop = /index\.html(\/index\.html)+$/.test(path);
+
+      if (isIndexLoop) {
+        window.location.replace(origin + '/index.html');
+      } else if (isFileRequest) {
+        // For missing static assets (e.g., .apk, .png, .js), do not redirect.
+        // Show the 404 page so downloads don't get stuck in an index.html redirect loop.
+      } else {
+        window.location.replace(origin + '/#' + path + (l.search || ''));
+      }
+    </script>
+  </head>
+  <body>
+    <p>Not found.</p>
+  </body>
+</html>
